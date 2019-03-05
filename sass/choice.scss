@@ -1,0 +1,214 @@
+ @import "base";
+
+
+
+ body{
+    background: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header{
+    width: 100%;
+    height:.44rem;
+    background: #00bf49;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 999;
+    .back{
+        width: .4rem;
+        height: .44rem;
+        background:url(../img/back.jpg) no-repeat;
+        background-size: 100% auto;
+    }
+    p{
+        font-size: .17rem;
+        color:#fff;
+        line-height: .44rem;
+        width: 60%;
+        text-align: center;
+        margin-top: 0;
+    }
+    .more{
+        @extend.back;
+        background:url(../img/more.jpg) no-repeat;
+        background-size: 100% auto;
+        
+    }
+}
+.bg{
+    width: 100%;
+    height:100%;
+    background: rgba($color: #000000, $alpha: 0.5);
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 9;
+    opacity: 0;
+}
+.nav{
+    width: 100%;
+    height: .7rem;
+    display: flex;
+    z-index: 99;
+    background: #fff;
+    position: absolute;
+    top:.44rem;
+    left:0;
+    transform: translateY(-1.2rem);
+    transition: all .4s;
+    a{
+    flex: 1;
+    color: #666;
+    font-size: .14rem;
+    text-align: center;
+    i{
+    display: block;
+    width: .3rem;
+    height: .3rem;
+    margin: .1rem auto;
+    background: url(../img/icon_top.png) no-repeat;
+    
+    }
+    .icon_name{
+        background-position: 0 0;
+        background-size: 1.5rem auto;
+        }
+    .icon_all{
+        background-position:-0.3rem 0;
+        background-size: 1.5rem auto;
+    }
+    .icon_soso{
+
+        background-position: -0.6rem 0;
+        background-size: 1.5rem auto;
+    }
+    .icon_my{
+        background-position: -0.9rem 0;
+        background-size: 1.5rem auto;
+    }
+    }
+}
+.on{
+    transform:translateY(0);
+}
+.onbg{
+    opacity: 1;
+}
+
+
+/* section */
+section{
+    flex: 1;
+    background: #fff;
+    .tit{
+        font-size: 14px;
+        height: .4rem;
+        text-indent: 15px;
+        line-height: .4rem;
+        background: #f2f2f2;
+    }
+    .hotcity{
+        width: 100%;
+        ul{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            li{
+                width: 25%;
+                a{
+                    display: block;
+                    font-size: 14px;
+                    color: #555;
+                    text-align: center;
+                    line-height: 40px;
+                    border-right:1px solid #eee;
+                    border-bottom:1px solid #eee;
+                }
+            }
+        }
+    }
+    .morecity{
+        width: 100%;
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 15px;
+            padding-left: 15px;
+            padding-bottom: .25rem;
+            li{
+                width: .35rem;
+                height: .35rem;
+                border: 1px solid #eeeeee;
+                border-radius: 3px;
+                font-size: 10px;
+                line-height: .35rem;
+                text-align: center;
+                margin: 0 7px 5px 0;
+            }
+        }
+        .city_con{
+            p{
+                font-size: 14px;
+                font-weight: 600;
+                line-height: .3rem;
+                text-indent: 15px;
+            }
+            ul{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0;
+                border-top:1px solid #eee;
+                border-bottom:1px solid #eee;
+                li{
+                    width: 25%;
+                    border: 0;
+                    a{
+                        display: block;
+                        font-size: 14px;
+                        color: #555;
+                        text-align: center;
+                        line-height: 40px;
+                        border-right:1px solid #eee;
+                    }
+                }
+            }
+        }
+    }
+}
+/* footer */
+footer{
+	width: 100%;
+	margin-top: 10px;
+	background: #fff;
+	ul{
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		li{
+			width: 25%;
+			a{
+				display: block;
+				font-size: 14px;
+				color: #555;
+				text-align: center;
+				line-height: 40px;
+				border-right:1px solid #eee;
+				border-bottom:1px solid #eee;
+			}
+		}
+	}
+	p{
+    color: #999;
+    font-size: .12rem;
+    line-height: .2rem;
+    text-align: center;
+    padding: .1rem 0;
+    background: #fff;
+	}
+}

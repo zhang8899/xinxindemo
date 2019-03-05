@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/register.css">
+    <title>注册</title>
+</head>
+<body>
+    <header>
+        <a href="" class="back"></a>
+        <p>注册</p>
+        <a  class="more"> </a>
+    </header>
+    <div class="reg">
+        <p><label for="">手机号码：</label><input type="text" placeholder="请输入手机号"></p>
+        <p><label for="">密码：</label><input type="password" placeholder="6-16位，区分大小写"></p>
+        <p><label for="">确认密码：</label><input type="password" placeholder=""></p>
+        <a href="" id="regBtn" class="btnReg">确认注册</a>
+    </div>
+    <div class="bg"></div>
+    <div class="nav">
+        <a href="">
+            <i class="icon_name"></i>
+            欣欣首页
+        </a>
+        <a href="">
+            <i class="icon_all"></i>
+           全部分类
+        </a>
+        <a href="">
+            <i class="icon_soso"></i>
+           搜索
+        </a>
+        <a href="">
+            <i class="icon_my"></i>
+          我的欣欣
+        </a>
+    </div>
+</body>
+</html>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script >
+    $(".more").click(function(){
+        
+           $(".nav").toggleClass("on");
+           
+           $(".bg").toggleClass("onbg");
+         
+       })
+</script>

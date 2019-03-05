@@ -1,0 +1,257 @@
+
+
+@import "base";
+
+body{
+    background: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header{
+    width: 100%;
+    height:.44rem;
+    background: #00bf49;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 999;
+    .back{
+        width: .4rem;
+        height: .44rem;
+        background:url(../img/back.jpg) no-repeat;
+        background-size: 100% auto;
+    }
+    p{
+        font-size: .17rem;
+        color:#fff;
+        line-height: .44rem;
+        width: 60%;
+        text-align: center;
+        margin-top: 0;
+    }
+    .more{
+        @extend.back;
+        background:url(../img/more.jpg) no-repeat;
+        background-size: 100% auto;
+        
+    }
+}
+.bg{
+    width: 100%;
+    height:100%;
+    background: rgba($color: #000000, $alpha: 0.5);
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 9;
+    opacity: 0;
+}
+.nav{
+    width: 100%;
+    height: .7rem;
+    display: flex;
+    z-index: 99;
+    background: #fff;
+    position: absolute;
+    top:.44rem;
+    left:0;
+    transform: translateY(-1.2rem);
+    transition: all .4s;
+    a{
+    flex: 1;
+    color: #666;
+    font-size: .14rem;
+    text-align: center;
+    i{
+    display: block;
+    width: .3rem;
+    height: .3rem;
+    margin: .1rem auto;
+    background: url(../img/icon_top.png) no-repeat;
+    
+    }
+    .icon_name{
+        background-position: 0 0;
+        background-size: 1.5rem auto;
+        }
+    .icon_all{
+        background-position:-0.3rem 0;
+        background-size: 1.5rem auto;
+    }
+    .icon_soso{
+
+        background-position: -0.6rem 0;
+        background-size: 1.5rem auto;
+    }
+    .icon_my{
+        background-position: -0.9rem 0;
+        background-size: 1.5rem auto;
+    }
+    }
+}
+.on{
+    transform:translateY(0);
+}
+.onbg{
+    opacity: 1;
+}
+
+
+
+/* section */
+section{
+    flex: 1;
+    background: #fff;
+    .fenlei{
+        display: flex;
+        padding-top:5px;
+        flex-wrap: wrap;
+        a{
+            width: 25%;
+            color: #333;
+            font-size: 14px;
+            text-align: center;
+            padding: 10px 0;
+            i{
+                display: block;
+                width: 0.42rem;
+                height: 0.42rem;
+                margin: 0 auto;
+                background: url(../img/sprite_more.png) no-repeat;
+            }
+            .sprite_guwen{
+                background-position: -.45rem -.95rem;
+                background-size:2.2rem 2.2rem;
+            }
+            .sprite_zhoubian{
+                background-position:-.45rem -1.86rem;
+                background-size:2.2rem 2.2rem; 
+            }
+            .sprite_guonei{
+                background-position: 0 -.96rem;
+                background-size:2.2rem 2.2rem; 
+            }
+            .sprite_chujing{
+                background-position: -.45rem 0;
+                background-size:2.2rem 2.2rem; 
+            }
+            .sprite_dingzhi{
+                background-position: 0 -.5rem;
+                background-size:2.2rem 2.2rem; 
+            }
+            .sprite_mudidi{
+                background-position: -1.33rem -1.42rem;
+                background-size:2.2rem 2.2rem; 
+            }
+            .sprite_lvxing{
+                background-position: -0.4rem -1.42rem;
+                background-size:2.2rem 2.2rem; 
+            }
+            .sprite_menpiao{
+                background-position: -1.8rem 0;
+                background-size:2.2rem 2.2rem;
+            }
+            .sprite_jingdian{
+                background-position: -1.35rem -0.5rem;
+                background-size:2.2rem 2.2rem;
+            }
+            .sprite_gonglve{
+                background-position: -.9rem 0;
+                background-size:2.2rem 2.2rem;
+            }
+            .sprite_zhinan{
+                background-position:0 -1.86rem;
+                background-size:2.2rem 2.2rem;
+            }
+            .sprite_zixun{
+                background-position:-1.35rem -1.86rem;
+                background-size:2.2rem 2.2rem;
+            }
+            .sprite_jipiao{
+                background-position:-1.35rem -.95rem;
+                background-size:2.2rem 2.2rem;
+            }
+            .sprite_jiudian{
+                background-position:0 0;
+                background-size:2.2rem 2.2rem;
+            }
+            .sprite_huoche{
+                background-position:-.9rem -.95rem;
+                background-size:2.2rem 2.2rem;
+            }
+            .sprite_zhuti{
+                background-position:-.9rem -1.86rem;
+                background-size:2.2rem 2.2rem;
+            }
+            .sprite_qiche{
+                background-position:-1.8rem -.45rem;
+                background-size:2.2rem 2.2rem;
+            }
+            .sprite_jifen{
+                background-position:-1.35rem 0;
+                background-size:2.2rem 2.2rem;
+            }
+            .sprite_tianqi{
+                background-position:-1.8rem -.95rem;
+                background-size:2.2rem 2.2rem;
+            }
+            .sprite_gongjiao{
+                background-position:-.45rem -.5rem;
+                background-size:2.2rem 2.2rem;
+            }
+            .sprite_ditie{
+                background-position:0 -1.42rem;
+                background-size:2.2rem 2.2rem;
+
+            }
+            .sprite_meishi{
+                background-position:-.9rem -1.42rem;
+                background-size:2.2rem 2.2rem;
+
+            }
+            .sprite_gouwu{
+                background-position:-.9rem -.5rem;
+                background-size:2.2rem 2.2rem;
+            }
+            .sprite_youbian{
+                background-position:-1.8rem -1.42rem;
+                background-size:2.2rem 2.2rem;
+            }
+        }
+    }
+    
+}
+/* footer */
+footer{
+	width: 100%;
+	margin-top: 10px;
+	background: #fff;
+	ul{
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		li{
+			width: 25%;
+			a{
+				display: block;
+				font-size: 14px;
+				color: #555;
+				text-align: center;
+				line-height: 40px;
+				border-right:1px solid #eee;
+				border-bottom:1px solid #eee;
+			}
+		}
+	}
+	p{
+    color: #999;
+    font-size: .12rem;
+    line-height: .2rem;
+    text-align: center;
+    padding: .1rem 0;
+    background: #fff;
+	}
+}
